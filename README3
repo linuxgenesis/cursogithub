@@ -3,12 +3,18 @@
 Autor: David Becerra Montellano
 Apodo: linuxgenesis
 
+== Una vez instalas GIT, debes configurarlo ==
+
+git config --global user.name "name"
+git config --global user.email "xxxx@xxxx.xxx"
+
+
 == Conexión remota a GitHub ==
 
 Pc Local:
 
-- Generar una llave pública en la pc que permitirá
-  realizar la comunicación con github
+- Generar una llave pública en la pc para
+  permitir la comunicación con github
 
   Linux: 
 
