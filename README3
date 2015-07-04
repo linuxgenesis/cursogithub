@@ -1,0 +1,35 @@
+------------------------------------------------------------
+
+Autor: David Becerra Montellano
+Apodo: linuxgenesis
+
+== Conexión remota a GitHub ==
+
+Pc Local:
+
+- Generar una llave pública en la pc que permitirá
+  realizar la comunicación con github
+
+  Linux: 
+
+  1.- Abrir consola
+  2.- cd ~
+  3.- Ejecutar el comando: ssh-keygen -t rsa
+  4.- Abrir el archivo /home/your_username/.ssh/id_rsa.pub con 
+      tu editor de texto favorito, y copiar el contenido en el
+      campo o apartado Key SSH de tu cuenta github.
+
+* En este punto, ya debería github reconocer la pc y existir
+la relación de confianza entre servidores.
+
+Ahora nos situamos en nuestro nuevo repositorio en la pc Local
+y Ejecutaremos el siguiente comando:
+
+sintax: git remote add origin git_ssh_cuenta_github
+> git remote add origin git@github.com:linuxgenesis/cursogithub.git
+
+> git pull origin master   - Este obtiene todos los archivos del repositorio de la cuenta GitHub y la rama master (principal)
+> git push origin master   - Semejante al anterior comando, sólo que este envia archivos a GitHub
+
+
+------------------------------------------------------------
